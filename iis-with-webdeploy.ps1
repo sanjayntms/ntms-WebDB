@@ -24,5 +24,5 @@ Get-Content $logFile
 
 $msiFile = [System.IO.Path]::GetTempFileName() | Rename-Item -NewName { $_ -replace 'tmp$', 'zip' } -PassThru
 Invoke-WebRequest -UseBasicParsing -Uri "https://csged50dd698631x4a14xa7d.blob.core.windows.net/scripts/ntmsSampleWebApp.zip" -OutFile $msiFile -verbose
-Expand-Archive $msiFile C:\inetpub\ -verbose
+Expand-Archive $msiFile C:\inetpub\wwwroot -verbose
 #Done
