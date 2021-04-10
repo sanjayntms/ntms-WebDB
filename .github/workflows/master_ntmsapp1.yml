@@ -53,5 +53,5 @@ jobs:
       with:
         app-name: 'ntmsapp1'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_3f3b61fd07e74cb5970b6299c5ce0117 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_2db32449a851484f85b3d9e7ae28ecd1 }}
         package: .
